@@ -1,10 +1,12 @@
 /* Estilo general */
 body {
-    font-family: 'Verdana', sans-serif;
-    background-image: url('images/6.png'); /* Cambiado a la imagen 6 */
+    font-family: 'Arial', sans-serif; /* Tipografía más atractiva */
+    background-image: url('images/6.png'); /* Imagen de fondo */
     background-size: cover;
     color: #333;
-    text-align: center;
+    text-align: center; /* Texto centrado */
+    margin: 0;
+    padding: 0;
 }
 
 /* Ocultar secciones al inicio */
@@ -58,7 +60,7 @@ body {
     padding: 15px;
     border-radius: 10px;
     width: 80%;
-    text-align: justify;
+    text-align: center; /* Centrado */
     line-height: 1.5;
 }
 
@@ -82,55 +84,75 @@ body {
 /* Estilo de títulos */
 h3 {
     color: #d81b60; /* Color que combina */
-    font-family: 'Georgia', serif;
-    margin-bottom: 10px;
-    text-align: center;
-    font-size: 28px; /* Títulos más grandes */
 }
 
-/* Lista del equipo */
-.team-list {
+/* Listas */
+ul {
     list-style-type: none;
     padding: 0;
-    font-size: 16px;
+}
+
+/* Estilo del icono de Instagram */
+.instagram-icon {
+    width: 30px; /* Tamaño del icono */
+    height: 30px;
+}
+
+/* Estilo de la sección de seguir en Instagram */
+.follow-us {
+    font-weight: bold;
+}
+
+.instagram-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+/* Estilo para los nombres de los integrantes */
+.team-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .team-list li {
-    margin: 5px 0;
-    background-color: #fffde7;
-    padding: 10px;
-    border-radius: 5px;
+    display: inline-block;
+    background-color: #ffe0b2; /* Color claro */
+    border-radius: 15px;
+    padding: 5px 15px;
+    margin: 5px;
+    color: #d81b60; /* Color que combina */
 }
 
-/* Lista de objetivos */
-.objectives-list {
-    list-style-type: none;
-    padding: 0;
-    font-size: 16px;
-}
-
-.objectives-list li {
-    margin: 10px 0;
-    background-color: #ffebee; /* Fondo rosado */
-    padding: 10px;
-    border-radius: 5px;
-}
-
-/* Galería de evidencias */
-.gallery {
-    display: flex;
-    justify-content: center;
+/* Estilo para la sección de evidencias */
+.evidence-section {
     margin-top: 20px;
 }
 
-.evidence-img {
-    display: none; /* Ocultas inicialmente */
-    width: 200px; /* Ajusta el tamaño de las imágenes de evidencias */
-    height: auto;
-    margin: 5px;
-    border-radius: 10px;
+.evidence-title {
+    font-size: 20px; /* Título más pequeño */
+    color: #d81b60; /* Color que combina */
 }
 
-.evidence-img:first-child {
-    display: block; /* Solo muestra la primera imagen al inicio */
+.evidence-images {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Permitir múltiples filas */
+}
+
+.evidence-images img {
+    width: 200px; /* Tamaño de las imágenes */
+    height: auto;
+    margin: 10px;
+    border-radius: 10px; /* Esquinas redondeadas */
+}
+
+/* Estilo para la imagen "us.png" */
+.us-img {
+    width: 250px; /* Aumentar tamaño */
+    height: auto;
+    margin: 20px auto; /* Margen superior e inferior */
+    display: block; /* Centrado */
 }
